@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h2>Лабораторную работу выполнили: Миронов Владислав и Юртаев Артем</h2>
+    <h4 class="mb-0"> @Model.Computer.Model</h4>
+    <p><b>Процессор:</b> @Model.Computer.Processor</p>
+    <p><b>Видеокарта:</b> @Model.Computer.Gpu</p>
+    <p><b>RAM:</b> @Model.Computer.RamGb ГБ</p>
+    <p><b>Накопитель:</b> @Model.Computer.StorageGb ГБ</p>
+    <p><b>ОС:</b> @Model.Computer.OperatingSystem</p>
+    <p><b>БП:</b> @Model.Computer.PsuWatts Вт</p>
+
+    @if (Model.Computer.HasRgb)
+    {
+        <span class="badge bg-success"> RGB</span>
+    }
+</div>
