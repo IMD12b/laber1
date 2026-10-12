@@ -10,7 +10,7 @@ namespace laber1.Pages
         public GamingPC Computer { get; set; }
         public void OnGet()
         {
-            Computer = new GamingPC("Lenovo", "Intel Core i7",64,1024, "Windows 10", "RTX 4090",1000,true);
+            Computer = new GamingPC("ARDOR", "Intel Core i9",64,1024, "Windows 11", "RTX 4070",1000,true);
         }
     }
 }
